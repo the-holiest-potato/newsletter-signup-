@@ -28,7 +28,7 @@ Users should be able to:
 ![mobile](image-1.png)
 ### Links
 
-- Live Site URL:(https://your-live-site-url.com)
+- Live Site URL:https://the-holiest-potato.github.io/newsletter-signup-/
 
 
 ### Built with
