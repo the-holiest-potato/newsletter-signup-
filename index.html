@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Newsletter Sign-up</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form -->
+  <div id="container">
+    <div id="content">
+      <h1 id="heading">Stay updated!</h1>
+      <h3 id="a">Join 60,000+ product managers receiving monthly updates on:</h3>
+
+      <ul class="benefits">
+        <li>
+          <img src="assets/images/icon-list.svg" alt="bullet" />
+          Product discovery and building what matters
+        </li>
+        <li>
+          <img src="assets/images/icon-list.svg" alt="bullet" />
+          Measuring to ensure updates are a success
+        </li>
+        <li>
+          <img src="assets/images/icon-list.svg" alt="bullet" />
+          And much more!
+        </li>
+      </ul>
+
+      <form id="newsletter-form" novalidate>
+ <div class="input-group">
+  <div class="label-row">
+    <label for="email" id="email-label">Email address</label>
+    <span id="error-msg" class="hidden">Valid email required</span>
+  </div>
+  <input type="email" id="email" placeholder="email@company.com" />
+</div>
+
+  <button>Subscribe to monthly newsletter</button>
+</form>
+
+    </div>
+
+    <div id="imgbox">
+      <img src="assets\images\illustration-sign-up-desktop.svg"alt="newsletter visual" class="desktop-img" />
+      <img src="assets\images\illustration-sign-up-mobile.svg" alt="newsletter visual" class="mobile-img">
+    </div>
+  </div>
+
+  <!-- Success Message -->
+  <div id="success-message" class="hidden">
+    <div class="icon-box">
+      <img src="assets/images/icon-list.svg" alt="Success icon" />
+    </div>
+    <h1>Thanks for subscribing!</h1>
+    <p>
+      A confirmation email has been sent to
+      <span id="user-email"></span>. Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button id="subs">Dismiss message</button>
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
